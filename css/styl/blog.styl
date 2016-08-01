@@ -4,21 +4,58 @@
 	// display flex
 	// flex-wrap wrap
 	// justify-content space-around
-	
+			
+	article
+		min-height 75vh
+	.item-1
+		background: url("../../img/775095-cool-creativity-wallpaper.jpg") center left
+		background-size: cover
+	.item-2
+		background: url("../../img/photo-1423753623104-718aaace6772.jpg") center left
+		background-size: cover
+	.item-3
+		background: url("../../img/photo-1441716844725-09cedc13a4e7.jpg") center left
+		background-size: cover
+		
+	[class^="item-"]
+		font-family open sans 
+		font-size 1.2em
+		color #fff
+		text-shadow 1.3px 1.3px 0px #000,-1.3px -1.3px 0px #000,-1.3px 1.3px 0px #000,1.3px -1.3px 0px #000
+		display flex 
+		flex-flow column
+		.texto
+			margin 2em
+		h4
+			font-size: 2em
+		p 
+			font-size 1.5em
+		&:nth-child(odd)
+			justify-content flex-end
+			align-items flex-end
+			h4
+				
+		&:nth-child(even)
+			justify-content flex-end
+			align-items flex-start
+		
 	h4
 	p 
 		margin 5px
-	article
-		min-height 100vh
+		
+	h4
+		margin-top 0
 
 h3
 	text-align center
 
 .icons
+	font-family: open sans
 	padding 0
 	display flex
 	justify-content center
 	align-items center
+	flex-basis 1 1 auto
 
 	margin 0em auto
 	
@@ -27,14 +64,13 @@ h3
 	p
 		margin 0 0px
 		padding 0
-		font-size 2em
+		font-size 3em
 		flex-wrap wrap
 		flex 1 1 auto
 		text-align center
 	.igual
-		font-size 1.1em
+		font-size 2em
 		margin 1px
-		width 90px
 
 article
 	text-align center
@@ -51,6 +87,7 @@ article
 	
 	h4
 		text-align center
+		padding-top 0
 		padding 1em
 		padding-bottom 4em
 		font-size 1.3em

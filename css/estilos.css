@@ -50,36 +50,78 @@ stylus -u nib -u rupture -w estilos.styl
     absolute: top 280px left 50px;
   }
 }
+.blog-items article {
+  min-height: 75vh;
+}
+.blog-items .item-1 {
+  background: url("../../img/775095-cool-creativity-wallpaper.jpg") center left;
+  background-size: cover;
+}
+.blog-items .item-2 {
+  background: url("../../img/photo-1423753623104-718aaace6772.jpg") center left;
+  background-size: cover;
+}
+.blog-items .item-3 {
+  background: url("../../img/photo-1441716844725-09cedc13a4e7.jpg") center left;
+  background-size: cover;
+}
+.blog-items [class^="item-"] {
+  font-family: open sans;
+  font-size: 1.2em;
+  color: #fff;
+  text-shadow: 1.3px 1.3px 0px #000, -1.3px -1.3px 0px #000, -1.3px 1.3px 0px #000, 1.3px -1.3px 0px #000;
+  display: flex;
+  flex-flow: column;
+}
+.blog-items [class^="item-"] .texto {
+  margin: 2em;
+}
+.blog-items [class^="item-"] h4 {
+  font-size: 2em;
+}
+.blog-items [class^="item-"] p {
+  font-size: 1.5em;
+}
+.blog-items [class^="item-"]:nth-child(odd) {
+  justify-content: flex-end;
+  align-items: flex-end;
+h4
+}
+.blog-items [class^="item-"]:nth-child(even) {
+  justify-content: flex-end;
+  align-items: flex-start;
+}
 .blog-items h4,
 .blog-items p {
   margin: 5px;
 }
-.blog-items article {
-  min-height: 100vh;
+.blog-items h4 {
+  margin-top: 0;
 }
 h3 {
   text-align: center;
 }
 .icons {
+  font-family: open sans;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-basis: 1 1 auto;
   margin: 0em auto;
   height: 80px;
 }
 .icons p {
   margin: 0 0px;
   padding: 0;
-  font-size: 2em;
+  font-size: 3em;
   flex-wrap: wrap;
   flex: 1 1 auto;
   text-align: center;
 }
 .icons .igual {
-  font-size: 1.1em;
+  font-size: 2em;
   margin: 1px;
-  width: 90px;
 }
 article {
   text-align: center;
@@ -96,6 +138,7 @@ article img {
 }
 .second-blog h4 {
   text-align: center;
+  padding-top: 0;
   padding: 1em;
   padding-bottom: 4em;
   font-size: 1.3em;
