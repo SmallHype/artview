@@ -9,7 +9,7 @@ stylus -u nib -u rupture -w estilos.styl
 .banner {
   width: 100%;
   height: 100vh;
-  background: #464646 url("../../img/bicicleta.jpg") fixed center center;
+  background: #464646 url("../img/bicicleta.jpg") fixed center center;
   background-size: cover;
   display: -webkit-flex;
   display: -moz-flex;
@@ -54,15 +54,15 @@ stylus -u nib -u rupture -w estilos.styl
   min-height: 75vh;
 }
 .blog-items .item-1 {
-  background: url("../../img/775095-cool-creativity-wallpaper.jpg") center left;
+  background: url("../img/775095-cool-creativity-wallpaper.jpg") center left;
   background-size: cover;
 }
 .blog-items .item-2 {
-  background: url("../../img/photo-1423753623104-718aaace6772.jpg") center left;
+  background: url("../img/photo-1423753623104-718aaace6772.jpg") center left;
   background-size: cover;
 }
 .blog-items .item-3 {
-  background: url("../../img/photo-1441716844725-09cedc13a4e7.jpg") center left;
+  background: url("../img/photo-1441716844725-09cedc13a4e7.jpg") center left;
   background-size: cover;
 }
 .blog-items [class^="item-"] {
